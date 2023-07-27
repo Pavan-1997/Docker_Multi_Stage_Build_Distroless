@@ -94,6 +94,7 @@ sudo usermod -aG docker $USER
 sudo systemctl status docker 
 ```
 
+
 3. Install Go
 ```
 sudo apt update -y
@@ -101,13 +102,18 @@ sudo apt update -y
 sudo apt install golang
 ```
 
+
 4. Clone my repository
+```
+git clone https://github.com/Pavan-1997/Docker_Multi_Stage_Build_Distroless.git
+```
 
 
 5. Run the calculator application using Go by going inside the repo folder Golang_Docker_MSB_Distroless
 ```
 go run calculator.go
 ```
+
 
 6. Go inside the repo folder dockerfile-without-multistage and create a docker image without Docker Multi Stage Build
 ```
@@ -128,7 +134,6 @@ sudo docker image ls
 sudo docker build -t simplecalculator_dmss .
 ```
   * Scratch is a minimal distroless image, Golang runs on this image since it doesn't require a run time but Python will fail because it requires a run time - eventually we have install python on top of this image
-
 
 
 9. Check the docker image size that is created which is of size `1.83MB`, which has significantly reduced the size
