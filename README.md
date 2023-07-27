@@ -1,18 +1,17 @@
 # Docker Multi Stage Build Distroless
 
-Multi Stage Builds_DOCKER
+"Distroless" images contain only your application and its runtime dependencies. They do not contain package managers, shells or any other programs you would expect to find in a standard Linux distribution.
 
-Splitting docker file into two parts - 
-
+The Docker Multi-Stage buld is implemented by Splitting the docker file into two parts - 
+```
 STAGE1:		FROM Ubuntu
 			RUN ---
 
 STAGE2: 	(Copying the Artifact binary file from Stage1 to Stage2) 
 			(In Stage2 choosing a very minimal image like python runtime or JRE or distroless image)
 			CMD [---]
-
-* Exclude the build we require only run time by dividing into stages
-
+* We exclude the build we require only run time by dividing into stages
+```
 -----------------------------------------------------------------------------------------------------------
 
 Consider a 3 tier application (Frontend - React, Backend - Java, DB - MySQL)
