@@ -116,7 +116,7 @@ sudo docker build -t simplecalculator .
   * ubi-minimal is lighter than Ubuntu or you can use a golang image but doesn't suffice the need for Docker MultiStage
 
 
-7. Check the docker image size that is created which is of size 863MB
+7. Check the docker image size that is created which is of size `863MB`
 ```
 sudo docker image ls
 ```
@@ -131,7 +131,7 @@ sudo docker build -t simplecalculator_dmss .
 
 
 
-9. Check the docker image size that is created which is of size 1.83MB, which has significantly reduced the size
+9. Check the docker image size that is created which is of size `1.83MB`, which has significantly reduced the size
 ```
 sudo docker image ls
 ```
