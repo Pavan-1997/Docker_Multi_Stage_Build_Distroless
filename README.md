@@ -120,6 +120,8 @@ sudo docker build -t simplecalculator .
 ```
 sudo docker image ls
 ```
+![image](https://github.com/Pavan-1997/Docker_Multi_Stage_Build_Distroless/assets/32020205/13e5bff7-fdfa-4757-a77c-55093b3b06d9)
+
 
 8. Go outside the repo folder dockerfile-without-multistage and create a docker image with Docker Multi Stage Build
 ```
@@ -133,3 +135,4 @@ sudo docker build -t simplecalculator_dmss .
 ```
 sudo docker image ls
 ```
+![image](https://github.com/Pavan-1997/Docker_Multi_Stage_Build_Distroless/assets/32020205/3ee48ba0-5d7e-4b0f-8dfd-c3ed2b8b097b)
