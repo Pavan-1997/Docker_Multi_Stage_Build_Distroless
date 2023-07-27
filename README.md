@@ -12,14 +12,13 @@ STAGE2: 	(Copying the Artifact binary file from Stage1 to Stage2)
 			CMD [---]
 * We exclude the build we require only run time by dividing into stages
 ```
------------------------------------------------------------------------------------------------------------
+---
+Consider a 3-tier application (Frontend - React, Backend - Java, DB - MySQL)
 
-Consider a 3 tier application (Frontend - React, Backend - Java, DB - MySQL)
-
-* We cant chose run time in Stage1 because later it may causes issues in instally other dependencies
+* We can't choose run time in Stage1 because later it may cause issues in installing other dependencies
 
 BEFORE MULTISTAGE DOCKER BUILD (Final docker image size goes upto 1.5GB) :
-
+```
 FROM Ubuntu ---> 400MB
 Install dependencies for Java ---> 50MB
 Install dependencies for React ---> 100MB
@@ -27,10 +26,10 @@ Install dependencies for MySQL ---> 100MB
 Build JAVA 
 Build Frontend
 Combined Entrypoint [/app.ear]			
-
+```
 
 AFTER MULTISTAGE DOCKER BUILD:
-
+```
 STAGE1:		FROM Ubuntu as Build ---> 400MB
 			Install dependencies for Java ---> 50MB
 			Install dependencies for React ---> 100MB
@@ -42,10 +41,10 @@ STAGE2: 	FROM openjdk11 ---> 100MB
 			copy --from Build --> 50MB
 			Entrypoint [/app.ear] 		
 
-So the final image size would be 150MB
+* So the final image size would be 150MB
 
 * There an be countess stages in Docker MultiStage file, but there will be only one final stage which will be a minimal image
-
+```
 -----------------------------------------------------------------------------------------------------------
 
 DISTROLESS DOCKER IMAGE:
