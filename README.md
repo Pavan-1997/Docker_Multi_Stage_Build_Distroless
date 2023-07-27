@@ -104,7 +104,7 @@ sudo apt install golang
 4. Clone my repository
 
 
-5. Run the calculator application using Go
+5. Run the calculator application using Go by going inside the repo folder Golang_Docker_MSB_Distroless
 ```
 go run calculator.go
 ```
