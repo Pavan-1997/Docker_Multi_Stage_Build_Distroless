@@ -10,6 +10,7 @@ STAGE2: 	(Copying the Artifact binary file from Stage1 to Stage2)
 			CMD [---]
 ```
 We exclude the build we require only run time by dividing into stages
+
 ---
 Consider a 3-tier application (Frontend - React, Backend - Java, DB - MySQL)
 
