@@ -52,7 +52,7 @@ STAGE2: 	FROM openjdk11 ---> 100MB
 
 - Its ia minimal image that will hardly have any packages
 
-- Golang is a statically types application which don't require a go run time to execute a Go application, which eventually reduces the docker image to 15MB of size. This image may not allow us to perform basic shell commands (find, wget, curl, ls)
+- Golang is a statically typed application which don't require a go run time to execute a Go application, which eventually reduces the docker image to 15MB of size. This image may not allow us to perform basic shell commands (find, wget, curl, ls)
 
 - Distroless images provides highest security by making the image less vulnerable
 
