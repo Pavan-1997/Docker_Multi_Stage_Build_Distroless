@@ -12,7 +12,7 @@ STAGE2: 	(Copying the Artifact binary file from Stage1 to Stage2)
 We exclude the build we require only run time by dividing into stages
 
 ---
-Consider a 3-tier application (Frontend - React, Backend - Java, DB - MySQL)
+# Consider a 3-tier application (Frontend - React, Backend - Java, DB - MySQL)
 
 * We can't choose run time in Stage1 because later it may cause issues in installing other dependencies
 
