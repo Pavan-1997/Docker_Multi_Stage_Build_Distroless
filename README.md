@@ -60,6 +60,7 @@ STAGE2: 	FROM openjdk11 ---> 100MB
 - OpenJDK is a distroless image which lead to 100MB 
 
 ---
+# Implementation 
 
 1. Now goto EC2 from AWS Console -> Click on Launch instance
 
