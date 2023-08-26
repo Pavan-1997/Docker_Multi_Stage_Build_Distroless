@@ -9,6 +9,7 @@ STAGE2: 	(Copying the Artifact binary file from Stage1 to Stage2)
 			(In Stage2 choosing a very minimal image like python runtime or JRE or distroless image)
 			CMD [---]
 ```
+We exclude the build we require only run time by dividing into stages
 ---
 Consider a 3-tier application (Frontend - React, Backend - Java, DB - MySQL)
 
