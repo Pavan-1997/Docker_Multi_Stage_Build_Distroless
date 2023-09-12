@@ -1,4 +1,4 @@
-# Docker Multi Stage Build Distroless  
+# Docker Multi Stage Build Distroless   
 
 The Docker Multi-Stage buld is implemented by Splitting the docker file into two parts - 
 ```
